@@ -63,18 +63,18 @@ export function SpotterOrb({ onClick }: { onClick?: () => void }) {
   if (isSpeaking) color = 'var(--ok)';
 
   return (
-    <div style={{ position: 'fixed', bottom: 24, right: 24, zIndex: 50 }}>
+    <div style={{ position: 'fixed', top: '50%', left: 24, transform: 'translateY(-50%)', zIndex: 50 }}>
       {/* Transcript bubble */}
       {showTranscript && transcript && (
         <motion.div
-          initial={{ opacity: 0, y: 10, scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, x: -10, scale: 0.9 }}
+          animate={{ opacity: 1, x: 0, scale: 1 }}
+          exit={{ opacity: 0, x: -10 }}
           style={{
-            position: 'absolute', bottom: 80, right: 0, minWidth: 200, maxWidth: 300,
+            position: 'absolute', top: 0, left: 80, minWidth: 200, maxWidth: 300,
             padding: 'var(--sp-3) var(--sp-4)', background: 'var(--surface-2)',
             border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)',
-            borderBottomRightRadius: 4, boxShadow: 'var(--shadow-lg)',
+            borderTopLeftRadius: 4, boxShadow: 'var(--shadow-lg)',
             color: 'var(--text)', fontSize: 'var(--text-sm)'
           }}
         >
