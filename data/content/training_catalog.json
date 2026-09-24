@@ -1,0 +1,214 @@
+{
+  "modules": [
+    {
+      "id": "TM-001",
+      "title": "Efficient dig-swing-dump",
+      "task_type": "Earth Excavation",
+      "duration_min": 2,
+      "difficulty": "beginner",
+      "description": "Master the three-phase excavation cycle for maximum productivity with minimum fuel waste.",
+      "steps": [
+        {
+          "title": "Positioning the bucket",
+          "content": "Align the excavator at a 45° angle to the cut face. Keep the boom low and the stick nearly vertical to maximise breakout force.",
+          "tip": "Avoid swinging the superstructure more than 90° — every extra degree wastes fuel."
+        },
+        {
+          "title": "Efficient loading technique",
+          "content": "Use the bucket curl at the bottom of the stroke to scoop material. Fill to 85–95% capacity — overfilling causes spillage on the swing.",
+          "tip": "Count your cycles: an expert averages 11 cycles/hour on this machine type."
+        },
+        {
+          "title": "Dump and return",
+          "content": "Swing smoothly to the dump point. Release the bucket at the top of the arc for even distribution. Return the empty bucket during the swing-back — don't wait until you're repositioned.",
+          "tip": "Combining the return swing with repositioning can save 3–5 seconds per cycle."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the recommended maximum swing angle to minimise fuel waste?",
+          "options": ["45°", "90°", "120°", "180°"],
+          "correct": 1
+        },
+        {
+          "question": "To what percentage should you fill the bucket?",
+          "options": ["50–60%", "70–80%", "85–95%", "100%"],
+          "correct": 2
+        },
+        {
+          "question": "What is the expert cycle rate for this machine?",
+          "options": ["6/hour", "8/hour", "11/hour", "15/hour"],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "TM-002",
+      "title": "Trenching in wet ground",
+      "task_type": "Trenching",
+      "duration_min": 2,
+      "difficulty": "intermediate",
+      "description": "Handle soggy conditions safely: drainage strategy, slope management, and speed adjustment for rainy weather.",
+      "steps": [
+        {
+          "title": "Pre-trench assessment",
+          "content": "Check soil saturation before starting. Wet clay expands and sticks to the bucket — expect 10–15% slower cycle times. Plan your spoil placement on the uphill side.",
+          "tip": "If it's been raining, add 5 minutes to your time estimate for every 100m of trench."
+        },
+        {
+          "title": "Managing wall stability",
+          "content": "In wet conditions, widen the trench by 15–20% to prevent cave-ins. Never undercut the walls. Watch for water seepage — it signals weak layers.",
+          "tip": "Stop immediately if you see water bubbling from the trench walls and report to your supervisor."
+        },
+        {
+          "title": "Bucket technique in mud",
+          "content": "Use a wider bucket if available. Reduce curl speed to prevent suction grip. Tap the bucket against the boom to shake off clinging material.",
+          "tip": "Clean the bucket every 10 cycles in very muddy conditions to maintain capacity."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How much should you widen a trench in wet conditions?",
+          "options": ["5%", "10%", "15–20%", "30%"],
+          "correct": 2
+        },
+        {
+          "question": "What should you do if water bubbles from trench walls?",
+          "options": ["Speed up to finish faster", "Add shoring", "Stop and report", "Ignore it"],
+          "correct": 2
+        },
+        {
+          "question": "How often should you clean the bucket in muddy conditions?",
+          "options": ["Every 5 cycles", "Every 10 cycles", "Every 20 cycles", "Only at break time"],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "TM-003",
+      "title": "Bucket fill & cycle efficiency",
+      "task_type": "Material Loading",
+      "duration_min": 2,
+      "difficulty": "beginner",
+      "description": "Optimise your loading cycles for maximum material moved per litre of fuel.",
+      "steps": [
+        {
+          "title": "Truck positioning",
+          "content": "Have the truck driver position the bed at a 30° angle to your swing path. The closer the truck, the less fuel you burn per cycle.",
+          "tip": "Every metre of extra distance costs ~0.02L per cycle. Over a shift, that adds up to 4–6 litres."
+        },
+        {
+          "title": "Full-bucket loading",
+          "content": "Drive into the pile at the base, curl up, and use boom lift. A properly filled bucket loads a truck in 4–5 passes, not 6–7.",
+          "tip": "Consistent 90% fill = fewer passes = less fuel = faster task completion."
+        },
+        {
+          "title": "Managing wait time",
+          "content": "When waiting for the next truck, lower the bucket to the ground and reduce engine RPM. Don't idle at full throttle — it costs ₹4.60/min (assumed rate).",
+          "tip": "If the wait exceeds 5 minutes, notify dispatch. Your idle time is tracked and affects efficiency scores."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the optimal truck angle to the excavator swing path?",
+          "options": ["15°", "30°", "45°", "90°"],
+          "correct": 1
+        },
+        {
+          "question": "How many passes should a properly filled bucket take to load a truck?",
+          "options": ["2–3", "4–5", "6–7", "8–10"],
+          "correct": 1
+        },
+        {
+          "question": "What should you do when waiting for the next truck?",
+          "options": ["Keep engine at full RPM", "Lower bucket and reduce RPM", "Shut down engine", "Move to next task"],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "TM-004",
+      "title": "Grading pass control",
+      "task_type": "Grading",
+      "duration_min": 2,
+      "difficulty": "intermediate",
+      "description": "Achieve a smooth, level finish with fewer correction passes using the excavator's grading bucket.",
+      "steps": [
+        {
+          "title": "Setting reference lines",
+          "content": "Before grading, establish your reference grade with stakes or laser level. Work from the highest point to the lowest — always cut to grade, never fill and cut.",
+          "tip": "Mark your target depth on the stick with tape for a quick visual reference."
+        },
+        {
+          "title": "The pull-back technique",
+          "content": "Extend the arm fully, set the bucket teeth at grade depth, and pull back steadily. Use a flat-bottom bucket for the finishing pass.",
+          "tip": "Keep the boom still — all movement should come from the stick and bucket curl."
+        },
+        {
+          "title": "Checking and correcting",
+          "content": "After each pass, sight along the graded surface. High spots need a light scrape; low spots need fill from nearby material. Expert operators finish in 2 passes.",
+          "tip": "A beginner may need 4–5 passes. Each extra pass costs ~3 minutes and 0.5L of fuel."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What direction should you work when grading?",
+          "options": ["Low to high", "High to low", "Random pattern", "Spiral inward"],
+          "correct": 1
+        },
+        {
+          "question": "What should remain still during the pull-back technique?",
+          "options": ["The stick", "The bucket", "The boom", "The tracks"],
+          "correct": 2
+        },
+        {
+          "question": "How many passes does an expert typically need?",
+          "options": ["1", "2", "4–5", "6+"],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "TM-005",
+      "title": "Demolition in wind: positioning",
+      "task_type": "Demolition",
+      "duration_min": 2,
+      "difficulty": "advanced",
+      "description": "Safely manage demolition tasks in windy conditions with proper machine positioning and debris control.",
+      "steps": [
+        {
+          "title": "Wind assessment",
+          "content": "Check wind speed and direction before positioning. Always work upwind of the demolition point so dust and debris blow away from the cab.",
+          "tip": "Wind above 40 km/h? Stop demolition and switch to a sheltered task."
+        },
+        {
+          "title": "Anchor and brace",
+          "content": "Lower the blade or stabilisers. In winds above 25 km/h, reduce your swing speed by 20% and avoid extending the boom past 75% reach.",
+          "tip": "A fully extended boom in wind acts like a sail — it can affect stability and precision."
+        },
+        {
+          "title": "Controlled demolition sequence",
+          "content": "Work from top to bottom, outside to inside. In wind, take smaller bites to control debris trajectory. Keep an escape route clear at all times.",
+          "tip": "Brief the ground crew on wind direction changes. Demolition in wind is a team operation."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "At what wind speed should you stop demolition?",
+          "options": ["20 km/h", "30 km/h", "40 km/h", "50 km/h"],
+          "correct": 2
+        },
+        {
+          "question": "Which direction should you position relative to the demolition point?",
+          "options": ["Downwind", "Upwind", "Crosswind", "Doesn't matter"],
+          "correct": 1
+        },
+        {
+          "question": "What is the maximum recommended boom extension in wind?",
+          "options": ["50%", "60%", "75%", "100%"],
+          "correct": 2
+        }
+      ]
+    }
+  ]
+}

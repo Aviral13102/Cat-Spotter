@@ -1,0 +1,13 @@
+{
+  "label": "Demo team (fictional)",
+  "entries": [
+    {"operator_id": "OP1001", "name": "You (OP1001)", "points": 0, "badges": 0, "is_self": true},
+    {"operator_id": "OP1002", "name": "Rajesh K.", "points": 485, "badges": 5, "is_self": false},
+    {"operator_id": "OP1003", "name": "Suresh M.", "points": 420, "badges": 4, "is_self": false},
+    {"operator_id": "OP1004", "name": "Priya S.", "points": 390, "badges": 4, "is_self": false},
+    {"operator_id": "OP1005", "name": "Amit D.", "points": 310, "badges": 3, "is_self": false},
+    {"operator_id": "OP1006", "name": "Kavita R.", "points": 275, "badges": 3, "is_self": false},
+    {"operator_id": "OP1007", "name": "Deepak V.", "points": 220, "badges": 2, "is_self": false},
+    {"operator_id": "OP1008", "name": "Nisha P.", "points": 180, "badges": 2, "is_self": false}
+  ]
+}

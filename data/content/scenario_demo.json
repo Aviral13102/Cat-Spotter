@@ -1,0 +1,130 @@
+{
+  "label": "Deterministic shift replay scenario — ~4 min real time at 1x speed",
+  "speed": 1,
+  "beats": [
+    {
+      "id": "B0",
+      "at_s": 0,
+      "action": "boot",
+      "payload": {
+        "weather_forecast": "schedule_seed.forecast_override",
+        "greeting": "Good morning, OP1001. Your shift starts now. I see rain at 11:00 and wind after 14:00 — I've reordered your tasks to save time."
+      },
+      "expect": [
+        "boot_animation_completes",
+        "greeting_nudge_shown",
+        "schedule_reordered",
+        "reorder_ribbon_visible"
+      ]
+    },
+    {
+      "id": "B1",
+      "at_s": 20,
+      "action": "forecast_check",
+      "payload": {
+        "check": "pre_shift_fuel"
+      },
+      "expect": [
+        "refuel_warning_shown",
+        "fuel_gauge_animates",
+        "spoken_refuel_warning"
+      ]
+    },
+    {
+      "id": "B2",
+      "at_s": 40,
+      "action": "start_task_and_telemetry",
+      "payload": {
+        "task_id": "D-01",
+        "voice_trigger": "start task",
+        "telemetry_window": 0
+      },
+      "expect": [
+        "task_status_active",
+        "eta_range_visible",
+        "confidence_ring_visible",
+        "cycle_counter_climbing",
+        "no_alerts_raised"
+      ]
+    },
+    {
+      "id": "B3",
+      "at_s": 70,
+      "action": "telemetry_window",
+      "payload": {
+        "telemetry_window": 1,
+        "notes": "Row 2: unfastened, idle 55, 2 cycles"
+      },
+      "expect": [
+        "seatbelt_critical_takeover",
+        "idle_warning_R_IDLE_02",
+        "unproductive_R_PROD_01",
+        "fuel_anomaly_R_FUEL_01",
+        "nudge_asks_idle_reason",
+        "idle_cost_meter_jumps"
+      ]
+    },
+    {
+      "id": "B4",
+      "at_s": 100,
+      "action": "weather_change",
+      "payload": {
+        "new_weather": "Rainy"
+      },
+      "expect": [
+        "eta_recalculates_live",
+        "eta_old_ghost_visible",
+        "eta_delta_chip_shown",
+        "task_rail_reorders",
+        "weather_chip_updates"
+      ]
+    },
+    {
+      "id": "B5",
+      "at_s": 130,
+      "action": "task_overrun",
+      "payload": {
+        "task_id": "D-01",
+        "overrun_pct": 18,
+        "operator_skill": "Beginner"
+      },
+      "expect": [
+        "training_auto_queued_toast",
+        "training_sheet_has_item",
+        "ghost_operator_shows_gap"
+      ]
+    },
+    {
+      "id": "B6",
+      "at_s": 160,
+      "action": "telemetry_and_proximity",
+      "payload": {
+        "telemetry_window": 2,
+        "proximity_inject": {"distance_m": 4, "kind": "person"},
+        "notes": "Row 3: healthy, then proximity danger"
+      },
+      "expect": [
+        "safe_hour_streak_increments",
+        "badge_animation_possible",
+        "proximity_danger_takeover"
+      ]
+    },
+    {
+      "id": "B7",
+      "at_s": 190,
+      "action": "telemetry_window_final",
+      "payload": {
+        "telemetry_window": 3,
+        "notes": "Row 4: unfastened, idle 60, 1 cycle — worst row"
+      },
+      "expect": [
+        "seatbelt_critical_takeover",
+        "idle_critical_R_IDLE_03",
+        "fatigue_gauge_high",
+        "break_recommended",
+        "incident_auto_drafted",
+        "end_of_shift_summary"
+      ]
+    }
+  ]
+}

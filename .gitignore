@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.vite/
+
+# Environment
+.env
+.env.local
+
+# Database
+*.db
+*.db-journal
+
+# ML artifacts
+backend/app/ml/artifacts/*.joblib
+backend/app/ml/artifacts/*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated
+data/synthetic/
+frontend/dist/
+
+# Logs
+*.log
+
+# Virtual environment
+venv/
+.venv/

@@ -1,0 +1,58 @@
+{
+  "label": "Today's schedule seed — designed so that weather-optimised reorder saves ≥8 min",
+  "date": "2025-05-01",
+  "tasks": [
+    {
+      "id": "D-01",
+      "task_type": "Trenching",
+      "site": "B",
+      "planned_start": "08:30",
+      "pinned": false,
+      "notes": "Remote site B (8km) — contributes to fuel shortfall"
+    },
+    {
+      "id": "D-02",
+      "task_type": "Earth Excavation",
+      "site": "A",
+      "planned_start": "09:30",
+      "pinned": false,
+      "notes": ""
+    },
+    {
+      "id": "D-03",
+      "task_type": "Material Loading",
+      "site": "A",
+      "planned_start": "11:00",
+      "pinned": false,
+      "notes": ""
+    },
+    {
+      "id": "D-04",
+      "task_type": "Grading",
+      "site": "A",
+      "planned_start": "13:00",
+      "pinned": true,
+      "notes": "Pinned: contractor inspection at 13:00"
+    },
+    {
+      "id": "D-05",
+      "task_type": "Demolition",
+      "site": "A",
+      "planned_start": "14:30",
+      "pinned": false,
+      "notes": ""
+    }
+  ],
+  "forecast_override": [
+    {"hour": "08:00", "condition": "Sunny", "temperature_c": 28, "wind_speed_kmh": 8},
+    {"hour": "09:00", "condition": "Sunny", "temperature_c": 30, "wind_speed_kmh": 10},
+    {"hour": "10:00", "condition": "Cloudy", "temperature_c": 29, "wind_speed_kmh": 12},
+    {"hour": "11:00", "condition": "Rainy", "temperature_c": 26, "wind_speed_kmh": 15},
+    {"hour": "12:00", "condition": "Rainy", "temperature_c": 25, "wind_speed_kmh": 18},
+    {"hour": "13:00", "condition": "Cloudy", "temperature_c": 27, "wind_speed_kmh": 14},
+    {"hour": "14:00", "condition": "Windy", "temperature_c": 29, "wind_speed_kmh": 32},
+    {"hour": "15:00", "condition": "Windy", "temperature_c": 30, "wind_speed_kmh": 35},
+    {"hour": "16:00", "condition": "Sunny", "temperature_c": 31, "wind_speed_kmh": 12}
+  ],
+  "design_notes": "Original order places Trenching at 08:30 (Sunny) and Demolition at 14:30 (Windy). Optimiser should move Trenching away from the 11:00-12:00 rain window and move Demolition away from the 14:00-15:00 wind window. The reorder should save ≥8 min by avoiding weather penalties. D-04 Grading is pinned at 13:00 and must not move. Site B on D-01 contributes to fuel shortfall since transit costs fuel."
+}
