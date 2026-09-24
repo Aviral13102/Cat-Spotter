@@ -63,7 +63,7 @@ export function SpotterOrb({ onClick }: { onClick?: () => void }) {
   if (isSpeaking) color = 'var(--ok)';
 
   return (
-    <div style={{ position: 'fixed', top: '50%', left: 24, transform: 'translateY(-50%)', zIndex: 50 }}>
+    <div style={{ position: 'fixed', top: '65%', left: 24, transform: 'translateY(-50%)', zIndex: 50 }}>
       {/* Transcript bubble */}
       {showTranscript && transcript && (
         <motion.div
@@ -71,7 +71,7 @@ export function SpotterOrb({ onClick }: { onClick?: () => void }) {
           animate={{ opacity: 1, x: 0, scale: 1 }}
           exit={{ opacity: 0, x: -10 }}
           style={{
-            position: 'absolute', top: 0, left: 80, minWidth: 200, maxWidth: 300,
+            position: 'absolute', top: 0, left: 90, minWidth: 200, maxWidth: 300,
             padding: 'var(--sp-3) var(--sp-4)', background: 'var(--surface-2)',
             border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)',
             borderTopLeftRadius: 4, boxShadow: 'var(--shadow-lg)',
@@ -97,15 +97,15 @@ export function SpotterOrb({ onClick }: { onClick?: () => void }) {
           ease: 'easeInOut'
         }}
         style={{
-          width: 64, height: 64, borderRadius: '50%', cursor: 'pointer',
-          background: `radial-gradient(circle at 30% 30%, ${color}, ${color}80)`,
-          border: `2px solid ${color}`, display: 'flex',
+          width: 72, height: 72, borderRadius: '50%', cursor: 'pointer',
+          background: color,
+          border: 'none', display: 'flex',
           alignItems: 'center', justifyContent: 'center',
-          color: '#000', fontSize: 'var(--text-xs)', fontWeight: 700,
+          color: '#000', fontSize: '10px', fontWeight: 800,
           fontFamily: 'var(--font-display)', letterSpacing: '0.05em'
         }}
       >
-        {isListening ? '🎤' : 'SPOT'}
+        {isListening ? '🎤' : 'SPOTTER'}
       </motion.button>
       
       {!isSupported && (
